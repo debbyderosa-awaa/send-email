@@ -41,8 +41,8 @@ export async function handler(event) {
       text: `A payment was received.
 
 Amount: $${(session.amount_total / 100).toFixed(2)}
+Customer Name: ${customerName}
 Customer Email: ${session.customer_email || "N/A"}
-Custom Answer: ${customAnswer}
 `,
     };
 
